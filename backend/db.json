@@ -1,0 +1,63 @@
+{
+  "menu": [
+    {
+      "title": "Menu Spécial 1",
+      "image": "assets/images/33.jpg",
+      "description": "Ceci est un menu spécial avec des plats délicieux.",
+      "mark": 26,
+      "approved": true,
+      "reservations": [],
+      "id": 1
+    },
+    {
+      "title": "jhkjhkj",
+      "description": "jnkjnk ihoih oihoihjn",
+      "approved": false,
+      "mark": 0,
+      "id": 5
+    },
+    {
+      "description": "dsnc bhjdgc jhdj jhdj ",
+      "title": "dhcj",
+      "approved": false,
+      "mark": 0,
+      "id": 6
+    }
+  ],
+  "article": [
+    {
+      "id": 2,
+      "title": "Article 1",
+      "description": "Ceci est la description de l'article 1.",
+      "image": "assets/images/33.jpg",
+      "likes": 99
+    },
+    {
+      "id": 4,
+      "title": "Article 1",
+      "description": "Ceci est la description de l'article 1.",
+      "image": "assets/images/33.jpg",
+      "likes": 52
+    }
+  ],
+  "todolist": [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "Mise en place de l'environnement111111",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "Création de la base de données",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "title": "Test des APIs noooo",
+      "completed": false
+    }
+  ]
+}
