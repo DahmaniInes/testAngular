@@ -1,0 +1,9 @@
+<div style="margin-bottom: 20px;">
+    <ng-container *ngFor="let c of albums">
+        <ng-container *ngIf="c.archived == 1">
+            <h2>{{ c.title }}</h2>
+      <img [src]="c.coverPicture" class="img-fluid h-50 w-75">   
+       
+        </ng-container>
+    </ng-container>
+</div>

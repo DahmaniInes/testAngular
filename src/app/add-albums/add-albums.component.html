@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <form #f="ngForm">
+            <div class="mb-3">
+                <h1>Ajouter Album</h1>
+                <label>Title : </label>
+                <input type="text" class="form-control" name="title" [(ngModel)]="album.title" #title="ngModel"
+                    required  >
+                <div *ngIf="title.invalid && (title.dirty || title.touched)" class="text-danger">
+                    <div *ngIf="title.errors?.['required']">Le titre est requis.</div>
+                   <!-- <div *ngIf="title.errors?.['pattern']">ne doit contenir que des lettres ou des chiffres.</div>-->
+
+                </div>
+    
+            <div class="mb-3">
+                <label>Image :</label>
+                <input type="text" class="form-control" name="image" [(ngModel)]="album.coverPicture" #image="ngModel"  minlength="5">
+                <div *ngIf="image.invalid && (image.dirty || image.touched)" class="text-danger">
+                    <div *ngIf="image.errors?.['required']">Le image est requis.</div>
+                    <div *ngIf="image.errors?.['minlength']">Le image doit contenir au moins 5 caractères.</div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button type="button" class="btn btn-primary" (click)="add()" [disabled]="f.invalid">Ajouter</button>
+
+            </div>
+            </div>
+        </form>
+    </div>
+</div>

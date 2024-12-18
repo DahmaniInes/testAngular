@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AlbumsComponent } from './albums/albums.component';
+import { ArchiveComponent } from './archive/archive.component';
+import { AddAlbumsComponent } from './add-albums/add-albums.component';
 
 
 const routes: Routes = [
-
+ /*{ path: 'Albums', component: AlbumsComponent},
+ { path: 'Archive', component: ArchiveComponent},
+ { path: 'AddAlbums', component: AddAlbumsComponent},
   /*{ path: 'home', component: HomeComponentComponent },
   { path: 'list', component: ListToDoComponent },
   { path: 'detail/:id/:title', component:ModifierListComponent }, // Définition des paramètres
